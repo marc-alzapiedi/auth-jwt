@@ -52,6 +52,13 @@ function verifyToken(token, secret) {
     
 }
 
+console.log(createToken({
+    "id": 153,
+    "username": "sanchez",
+    "email": "rick@sanchez.com",
+    "role": "ADMIN"
+}, '87764d1a-92dc-4ced-a758-9c898c31d525'))
+
 module.exports = {
     createToken,
     createTokenWithExpiry,
